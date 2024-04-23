@@ -102,7 +102,7 @@
                         <div style="margin-top:5px" class="row  justify-content-center align-items-center">
                             <div class="col " style="justify-content:center;align-items:center">
                                 <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                                <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
+                                <img src="<?= $images['images'] ?>" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
                             </div>
                         </div>
                         <div>

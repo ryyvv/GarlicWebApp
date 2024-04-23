@@ -16,11 +16,11 @@
                 <!-- list --> 
                 <?php foreach ($fetchImages as $images) : ?>
 
-                <div class="cardDashboard align-items-center" style="width:210px;height:280px;margin-right:15px">
+                <div class="cardDashboard align-items-center" style="width:210px;height:280px;margin-right:15px;margin-bottom:20px">
                         <div style="margin-top:5px" class="row  justify-content-center align-items-center">
                             <div class="col " style="justify-content:center;align-items:center">
                                 <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                                <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
+                                <img src="<?= $images['images'] ?>" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
                             </div>
                         </div>
                         <div>
@@ -29,7 +29,7 @@
                         </div>
                         <div class="d-flex flex-row">
                             <div class="flex-col " style="margin-right:10px">
-                                <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
+                                <img src="<?= $images['images'] == 'icon' ?  './../../src/user1.jpg' :$images['images']  ?>" width="20" height="20" style="border-radius: 50%;" />
                             </div>
                             <div>
                                 <p class="cardtext5"><?= $images['name'] ?></p>
