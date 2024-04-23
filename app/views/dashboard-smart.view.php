@@ -14,216 +14,37 @@
             <!-- Analysed image -->
             <div class="row flex-wrap " style="margin:0px;width:2200px;overflow-y:scroll;scrollbar-width: none">
                 <!-- list --> 
-                <div class="cardDashboard align-items-center" style="width:210px;height:280px; margin-bottom: 20px;margin-right:15px">
-                    <div style="margin-top:5px" class="row  justify-content-center align-items-center">
-                        <div class="col " style="justify-content:center;align-items:center">
-                            <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                            <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
-                        </div>
-                    </div>
-                    <div>
-                        <p class="cardtext7">Purple Blotch</p>
-                        <p>ID:KHFEBKDFLLEKLNDM</p>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="flex-col " style="margin-right:10px">
-                            <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
+                <?php foreach ($fetchImages as $images) : ?>
+
+                <div class="cardDashboard align-items-center" style="width:210px;height:280px;margin-right:15px">
+                        <div style="margin-top:5px" class="row  justify-content-center align-items-center">
+                            <div class="col " style="justify-content:center;align-items:center">
+                                <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
+                                <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
+                            </div>
                         </div>
                         <div>
-                            <p class="cardtext5">Ryan James J. Pascual</p>
-                            <p class="cardtext6">ryy@gmail.com</p>
+                            <p class="cardtext7"><?= $images['result'] ?></p>
+                            <p>Plant: <?= $images['title'] ?></p>
                         </div>
+                        <div class="d-flex flex-row">
+                            <div class="flex-col " style="margin-right:10px">
+                                <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
+                            </div>
+                            <div>
+                                <p class="cardtext5"><?= $images['name'] ?></p>
+                                <p class="cardtext6"><?= $images['address'] ?></p>
+                            </div>
 
-                    </div>
-                    <div class="d-flex flex-row align-items-center" style="margin-top:10px">
-                        <i class='bx bx-cloud-upload ' style="color:gray"></i>
-                        <p class="cardtext6" style="margin-left:5px">January 10, 2024</p>
-                    </div>
-                </div>
-                <div class="cardDashboard align-items-center" style="width:210px;height:280px; margin-bottom: 20px;margin-right:15px">
-                    <div style="margin-top:5px" class="row  justify-content-center align-items-center">
-                        <div class="col " style="justify-content:center;align-items:center">
-                            <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                            <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-top:10px">
+                            <i class='bx bx-cloud-upload ' style="color:gray"></i>
+                            <p class="cardtext6" style="margin-left:5px"><?= $images['dateuploaded'] ?></p>
                         </div>
                     </div>
-                    <div>
-                        <p class="cardtext7">Purple Blotch</p>
-                        <p>ID:KHFEBKDFLLEKLNDM</p>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="flex-col " style="margin-right:10px">
-                            <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
-                        </div>
-                        <div>
-                            <p class="cardtext5">Ryan James J. Pascual</p>
-                            <p class="cardtext6">ryy@gmail.com</p>
-                        </div>
 
-                    </div>
-                    <div class="d-flex flex-row align-items-center" style="margin-top:10px">
-                        <i class='bx bx-cloud-upload ' style="color:gray"></i>
-                        <p class="cardtext6" style="margin-left:5px">January 10, 2024</p>
-                    </div>
-                </div>
-                <div class="cardDashboard align-items-center" style="width:210px;height:280px; margin-bottom: 20px;margin-right:15px">
-                    <div style="margin-top:5px" class="row  justify-content-center align-items-center">
-                        <div class="col " style="justify-content:center;align-items:center">
-                            <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                            <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
-                        </div>
-                    </div>
-                    <div>
-                        <p class="cardtext7">Purple Blotch</p>
-                        <p>ID:KHFEBKDFLLEKLNDM</p>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="flex-col " style="margin-right:10px">
-                            <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
-                        </div>
-                        <div>
-                            <p class="cardtext5">Ryan James J. Pascual</p>
-                            <p class="cardtext6">ryy@gmail.com</p>
-                        </div>
-
-                    </div>
-                    <div class="d-flex flex-row align-items-center" style="margin-top:10px">
-                        <i class='bx bx-cloud-upload ' style="color:gray"></i>
-                        <p class="cardtext6" style="margin-left:5px">January 10, 2024</p>
-                    </div>
-                </div>
-                <div class="cardDashboard align-items-center" style="width:210px;height:280px; margin-bottom: 20px;margin-right:15px">
-                    <div style="margin-top:5px" class="row  justify-content-center align-items-center">
-                        <div class="col " style="justify-content:center;align-items:center">
-                            <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                            <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
-                        </div>
-                    </div>
-                    <div>
-                        <p class="cardtext7">Purple Blotch</p>
-                        <p>ID:KHFEBKDFLLEKLNDM</p>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="flex-col " style="margin-right:10px">
-                            <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
-                        </div>
-                        <div>
-                            <p class="cardtext5">Ryan James J. Pascual</p>
-                            <p class="cardtext6">ryy@gmail.com</p>
-                        </div>
-
-                    </div>
-                    <div class="d-flex flex-row align-items-center" style="margin-top:10px">
-                        <i class='bx bx-cloud-upload ' style="color:gray"></i>
-                        <p class="cardtext6" style="margin-left:5px">January 10, 2024</p>
-                    </div>
-                </div>
-                <div class="cardDashboard align-items-center" style="width:210px;height:280px; margin-bottom: 20px;margin-right:15px">
-                    <div style="margin-top:5px" class="row  justify-content-center align-items-center">
-                        <div class="col " style="justify-content:center;align-items:center">
-                            <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                            <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
-                        </div>
-                    </div>
-                    <div>
-                        <p class="cardtext7">Purple Blotch</p>
-                        <p>ID:KHFEBKDFLLEKLNDM</p>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="flex-col " style="margin-right:10px">
-                            <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
-                        </div>
-                        <div>
-                            <p class="cardtext5">Ryan James J. Pascual</p>
-                            <p class="cardtext6">ryy@gmail.com</p>
-                        </div>
-
-                    </div>
-                    <div class="d-flex flex-row align-items-center" style="margin-top:10px">
-                        <i class='bx bx-cloud-upload ' style="color:gray"></i>
-                        <p class="cardtext6" style="margin-left:5px">January 10, 2024</p>
-                    </div>
-                </div>
-                <div class="cardDashboard align-items-center" style="width:210px;height:280px; margin-bottom: 20px;margin-right:15px">
-                    <div style="margin-top:5px" class="row  justify-content-center align-items-center">
-                        <div class="col " style="justify-content:center;align-items:center">
-                            <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                            <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
-                        </div>
-                    </div>
-                    <div>
-                        <p class="cardtext7">Purple Blotch</p>
-                        <p>ID:KHFEBKDFLLEKLNDM</p>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="flex-col " style="margin-right:10px">
-                            <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
-                        </div>
-                        <div>
-                            <p class="cardtext5">Ryan James J. Pascual</p>
-                            <p class="cardtext6">ryy@gmail.com</p>
-                        </div>
-
-                    </div>
-                    <div class="d-flex flex-row align-items-center" style="margin-top:10px">
-                        <i class='bx bx-cloud-upload ' style="color:gray"></i>
-                        <p class="cardtext6" style="margin-left:5px">January 10, 2024</p>
-                    </div>
-                </div>
-                <div class="cardDashboard align-items-center" style="width:210px;height:280px; margin-bottom: 20px;margin-right:15px">
-                    <div style="margin-top:5px" class="row  justify-content-center align-items-center">
-                        <div class="col " style="justify-content:center;align-items:center">
-                            <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                            <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
-                        </div>
-                    </div>
-                    <div>
-                        <p class="cardtext7">Purple Blotch</p>
-                        <p>ID:KHFEBKDFLLEKLNDM</p>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="flex-col " style="margin-right:10px">
-                            <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
-                        </div>
-                        <div>
-                            <p class="cardtext5">Ryan James J. Pascual</p>
-                            <p class="cardtext6">ryy@gmail.com</p>
-                        </div>
-
-                    </div>
-                    <div class="d-flex flex-row align-items-center" style="margin-top:10px">
-                        <i class='bx bx-cloud-upload ' style="color:gray"></i>
-                        <p class="cardtext6" style="margin-left:5px">January 10, 2024</p>
-                    </div>
-                </div>
-
-                <div class="cardDashboard align-items-center" style="width:210px;height:280px; margin-bottom: 20px;margin-right:15px">
-                    <div style="margin-top:5px" class="row  justify-content-center align-items-center">
-                        <div class="col " style="justify-content:center;align-items:center">
-                            <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                            <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
-                        </div>
-                    </div>
-                    <div>
-                        <p class="cardtext7">Purple Blotch</p>
-                        <p>ID:KHFEBKDFLLEKLNDM</p>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="flex-col " style="margin-right:10px">
-                            <img src="../../src/user1.jpg" width="20" height="20" style="border-radius: 50%;" />
-                        </div>
-                        <div>
-                            <p class="cardtext5">Ryan James J. Pascual</p>
-                            <p class="cardtext6">ryy@gmail.com</p>
-                        </div>
-
-                    </div>
-                    <div class="d-flex flex-row align-items-center" style="margin-top:10px">
-                        <i class='bx bx-cloud-upload ' style="color:gray"></i>
-                        <p class="cardtext6" style="margin-left:5px">January 10, 2024</p>
-                    </div>
-                </div>
-
+                <?php endforeach ?>
+               
         
             </div>
 

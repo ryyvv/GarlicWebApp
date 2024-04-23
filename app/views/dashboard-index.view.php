@@ -102,7 +102,7 @@
                         <div style="margin-top:5px" class="row  justify-content-center align-items-center">
                             <div class="col " style="justify-content:center;align-items:center">
                                 <!-- <img src="../../src/garlic10.png" height="120" width="150" style="position:absolute;opacity:0.5;border-radius:10px"> -->
-                                <img src="<?= $images['images'] ?>" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
+                                <img src="../../src/garlic10.png" height="120" width="150" style="position:relative;top:-10px;right:-12px;border-radius:10px">
                             </div>
                         </div>
                         <div>
@@ -147,10 +147,10 @@
                         <div class='cardDashboardlist d-flex flex-row flex-wrap justify-content-between align-items-center'>
                             <div class=" col col-5 d-flex flex-row">
                                 <div class=" flex-col " style="margin-right:10px">
-                                    <img src="<?= $Datarow['userProfile'] != null ? $Datarow['userProfile'] : './../../src/user1.jpg' ?>" width="40" height="40" style="border-radius: 50%;box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);" />
+                                    <img src="<?= $Datarow['userProfile'] == 'icon' ?  './../../src/user1.jpg' :$Datarow['userProfile']  ?>" width="40" height="40" style="border-radius: 50%;box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);" />
                                 </div>
                                 <div>
-                                    <p class="cardtext3"><?= $Datarow['name'] ?></p>
+                                    <p class="cardtext3"><?= $Datarow['userName'] ?></p>
                                     <p class="cardtext4"><?= $Datarow['email'] ?></p>
                                 </div>
                             </div>
