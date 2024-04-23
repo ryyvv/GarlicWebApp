@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "nicer-garlic-app",
+    "private_key_id": "e1dfa787c4870bfd0d72d3dde193f313f8991505",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC7KN6f+mjo3KBr\nHxh5JljH/Fde5EX7lZ9QsjEe3mcjzdpzd670gPbw61orjML0Tsz2RK8UPIXkJtt+\nm6heIsOH+EpuxFJVyTKVtDoE5eKqzJYq89EzO7meS8lZKUnqe3Udz6ScF9Q70qky\nU5X23Vpa554qaFfXooruiQx8FCi4coCZEYFfiSC1TTQnf0dNC4XHTI85+RyKTIOh\n4AKSlUu34t/RLs2oj7HFiZoXnnLXMmclzenKLKoeUcPxm7Lpt3JPm+40dDqTFLed\njGxGqo2/0sk4itUcfbpdKHbwCBTNPS7fQcy4pv+IssQSY5Nz3mFsGvY3gNyCc3gH\nIJ03TBW5AgMBAAECggEAAkVFPtLH0IwSrHywrDxCnKSAqS+i82HV5bb6YRSTfZag\nVUEeX9bWXXG22ECULJNt1E6yLWWW6JUZxHAI1iGHq+qKI/dg71ZU9TDTTl69Rf4G\n6Vz9Yf4nauv3n0u2BZtQqQICo3vSMOqbRQzIt46+a0wUOhFQ1YEiPIbFnmtpMLmk\n6k0I4HzY3AdhWDq10SvfyvCrMNZ9hrPyF+MFZJ1RoI4HrHb8bz3ZjvU0F2mOdTsp\n/PiwVXLw8oxG5EScRO0HRUTxdtzwnvlkX7qNTOSWeXv41nh9OfRCaU53X7J7qRRc\nnmkwIHCeETja0ZICgKmgaoCSDIro1hBF/8IG6lhkPQKBgQDhqlDCUlvM1V6qv5vk\ngz6f80S4i4tQIZERoH/lfZInMa0sz5PlqLLgyApWRM+SPYqFfqCAKFx4AlaQam6H\nJjZzDNJHZCbmC2vtpiG+NljToay9kNoCFab6uE10axHGxH73L4vLZL/I8wuGjWhy\nuXxyj1wLKP1vbtws3DcoluIbZQKBgQDUUXt9jGTWc0RpYyXwqHe4Fifw0C2pQE5c\nMQuOxwZyFNKXIUTBcx6y1v1wHKeVg21DrcZO1i4xeAWT5H736dSztvQGIMz//AYM\n+stl/C2MDTVQ+ryKOV4F5QW4pzEO4RsLaC/BNniH2vv89cFxfT7WwLzqiYyrF8uK\nll0tkGdtxQKBgQCrClUlxBiyWzLihlJZVCS+RTtcCOBxvs9epeDqh0+kh2Fzqm21\nzzStbNFw67zMYfrBDeYG3RChIVyNHy5hH1R7xUcIN1/IUvXd7WJ78mNHHK56C/VB\nSToDpHeIerLBjiORpSb25Yj7fUPKGxoEgpRRnFkuWEYnFMaq9cqU6C++hQKBgQC9\n73bNxb6fqdZVgQD73XncENYCM/nlI0X2a1mvjJRTkhUiZfygImAgFPv8Q2YX9s7U\ncKyq8ie40WoL96kuFtzVOKHsqYM6rTasfd9fiM0mMNq1atknvlJCa7NGkSrt6KrM\n9ZNjAVuqDVjH3wICiMyiSSG3nv1cQZkwjXslu70LEQKBgHN3nVCKOFDIxAOx2YRp\nFdC3+umCH4kfi3CxMmv7zWLBPET9BEX3w4JwV5B56GEvaK63jD46mxdiZ1PRhKnR\nbG9VuDLKc6wRUMPtE4KP+KUTpujRAfNg30uCiKLl+Minu8YalP9smFv9VyNXoEBm\n8ebKfvdMVyrWlbWFURVBR9cY\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-dirin@nicer-garlic-app.iam.gserviceaccount.com",
+    "client_id": "112770218145340064784",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-dirin%40nicer-garlic-app.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
