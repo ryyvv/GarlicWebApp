@@ -13,19 +13,26 @@
         <div class="row  justify-content-start    ">
             <div class="cardDashboard">
                 <!-- Search&#ofdisplaydata -->
-                <div class="row">
-                    <div class="col col-6">
+                <div class="row" style="padding-right:20px;padding-left:20px;margin-top:25px">
+                    <div class="col col-4">
                         <p>set Page display</p>
                         <!-- <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form> -->
                     </div>
-                    <div class="col col-6">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                    <div class="col col-8">
+                        <div class="row justify-content-end">
+                        <div class="col col-8">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col col-3">
+                                <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- table -->

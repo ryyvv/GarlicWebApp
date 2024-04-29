@@ -150,13 +150,13 @@
                                     <img src="<?= $Datarow['userProfile'] == 'icon' ?  './../../src/user1.jpg' :$Datarow['userProfile']  ?>" width="40" height="40" style="border-radius: 50%;box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);" />
                                 </div>
                                 <div>
-                                    <p class="cardtext3"><?= $Datarow['userName'] ?></p>
+                                    <p class="cardtext3"><?= $Datarow['name'] ?></p>
                                     <p class="cardtext4"><?= $Datarow['email'] ?></p>
                                 </div>
                             </div>
                             <div class="col col-5 flex-col">
-                                <p class="cardtext3"><?= $Datarow['Address'] ?></p>
-                                <p class="cardtext4"><?= $Datarow['DateCreated'] ?></p>
+                                <p class="cardtext3"><?= $Datarow['address'] ?></p>
+                                <p class="cardtext4"><?= $Datarow['dateCreated'] ?></p>
                             </div>
                             <div class="col col-2">
                                 <p class="cardtext4 ongoing">1 Ongoing</p>
@@ -176,7 +176,7 @@
                 <div>
                     <p>Recent Uploads</p>
                 </div>
-                <div class='cardDashboardlist2 d-flex flex-row ' style="overflow-y:scroll;height:700px;  scrollbar-width: none;">
+                <div class='cardDashboardlist2 d-flex flex-row ' style="overflow-y:scroll;max-height:700px;  scrollbar-width: none;">
                     <div class="container2">
                     <?php foreach ($fetchImages as $images) : ?>
                             <div class="timeline-item" date-is="<?= $images['dateuploaded'] ?>">

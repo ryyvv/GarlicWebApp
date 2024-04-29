@@ -4,7 +4,7 @@ require './app/config/dbconfig.php';
 $ref_table = 'users';
 $fetchUserTable = $realtimeDatabase->getReference($ref_table)->getValue();
 
-$ref_imagetable = 'image analyze';
+$ref_imagetable = 'imageAnalyze';
 $fetchImageTable = $realtimeDatabase->getReference($ref_imagetable)->getValue();
 
 function userInfo($fetchUserTable)
@@ -40,11 +40,12 @@ function projects($fetchUserTable)
     if ($fetchUserTable > 0) {
         $projects = 0;
         foreach ($fetchUserTable as $outer_key => $inner_array) {
-
+            //echo "Outer key: " . $outer_key . 'Value ' . $inner_array ;
             foreach ($inner_array as $inner_key => $value1) {
+                //echo "Inner key: " . $inner_key ;
                 if ($inner_key == 'plants'   &&  is_array($value1)) {
                     // foreach ($value1 as $value_key => $value2) {
-                    //     echo "Data Key: " . $value_key ;
+                        //echo "Data Key: " . $value1 ;
                     //     // echo "Outer Key: " . $outer_key ."inner Key: " . $inner_key .  "Data Key: " . $value_key . ",Value: " . $value1['name'] . "<br>";
                     //     $Data[$loop][$value_key] = $value_key;
                     // }
@@ -60,6 +61,8 @@ function projects($fetchUserTable)
 
 //RegisteredFarmer
 $allProjects = projects($fetchUserTable);
+ 
+
 
 function registered($fetchUserTable)
 {
@@ -125,18 +128,22 @@ function analyzeImage($fetchImageTable)
         foreach ($fetchImageTable as $outer_key => $inner_array) {
             //echo "Outer Key: " . $outer_key . "value: ". $inner_array. "<br>";
             foreach ($inner_array as $inner_key => $value1) {
-                //echo  "inner Key: " . $inner_key . "value: ". $value1. "<br>";
-                $Images[$loop][$inner_key] = $value1;
+                ///echo  "inner Key: " . $inner_key . "value: ". $value1. "<br>";
+                //$Images[$loop][$inner_key] = $value1;
+                foreach ($value1 as $inner_key1 => $value2) {
+                    //echo  "inner Key2: " . $inner_key1 . "value2: ". $value2. "<br>";
+                    $Images[$loop][$inner_key1] = $value2;
+                }
+                $loop++;
             }
-            $loop++;
+          
         }
     } else {
         echo "data not found!";
     }
     return $Images;
 }
-$fetchImages = analyzeImage($fetchImageTable);
-
+$fetchImages = analyzeImage($fetchImageTable); 
 
 function countImagesUpload($fetchImageTable)
 {
@@ -174,9 +181,6 @@ function countImagesUploadAnalyzed($fetchImageTable)
     return $images;
 }
 $countAnalyzedimage = countImagesUploadAnalyzed($fetchImageTable);
-
-
-
 
 
 

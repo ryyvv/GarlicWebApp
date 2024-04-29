@@ -30,7 +30,7 @@
                                 </form>
                             </div>
                             <div class="col col-3">
-                                <button class="btn btn-primary" type="submit">Add Sub-Admin</button>
+                            <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#staticBackdropCreate">Add Sub-Admin</button>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                                 <td>ACTIVE</td>
                                 <td>
                                     <div>
-                                        <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</button>
+                                        <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#staticBackdropUpdate">Edit</button>
                                         <button type="button" class="btn btn-outline-danger">Delete</button>
                                     </div>
                                 </td>
@@ -185,6 +185,7 @@
         </div>
     </div>
 
+    <?php require './app/modal/admin-update.view.php' ?>
     <?php require './app/modal/admin-create.view.php' ?>
 </main>
 
